@@ -1,43 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>John Doe - Développeur web full-stack</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Perso -->
+	  <link rel="stylesheet" href="../src/index.css" media="screen">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!--HEADER-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark text-light text-uppercase fixed-top" id="mainNav">
+              <div class="container">
+                  <a class="navbar-brand text-light" href="#page-top">John Doe</a>
+                  <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav ms-auto text-uppercase">
+                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./index.html">Home</a></li>
+                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../public/pages/services.html">Services</a></li>
+                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../public/pages/portfolio.html">Portefolio</a></li>
+                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../public/pages/contact.html">Contact</a></li>
+                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../public/pages/mentionslegales.html">Mentions légales</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+    </header>
+    <!--MAIN CONTENT-->
+    <main>
+      <section class="bg-img block text-light text-center p-4">
+          <h1 class="text-uppercase mb-3">Bonjour, je suis John Doe</h1>
+          <h2 class="mb-4">Développeur web fullstack</h2>
+          <a class="btn btn-danger" href="https://api.github.com/users/github-johndoe" role="button">En savoir plus</a>
+      </section>
+      <section class="text-dark p-5">
+        <div class="padside-20">
+          <div class="row shadow p-5 mb-5 bg-body rounded">
+            <div class="col-6">
+              <h2 class="text-dark mb-5">A propos</h2>
+              <hr class="h-2">
+              <img class="col-12" src="../public/img/john-doe-about.jpg" alt="John Doe - Développeur web full-stack">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus reiciendis impedit aut iure enim placeat? Natus, neque at?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus reiciendis impedit aut iure enim placeat? Natus, neque at?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus reiciendis impedit aut iure enim placeat? Natus, neque at?</p>
+            </div>
+            <div class="col-6">
+              <h2 class="text-dark mb-5">Mes compétences</h2>
+              <hr class="h-2">
+              <h5>HTML5  90%</h5>
+              <div class="progress mb-5">            
+                <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h5>CSS3  80%</h5>
+              <div class="progress mb-5">            
+                <div class="progress-bar bg-info" role="progressbar" aria-label="Info example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h5>JAVASCRIPT  70%</h5>
+              <div class="progress mb-5">            
+                <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h5>PHP  60%</h5>
+              <div class="progress mb-5">            
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h5>REACT  50%</h5>
+              <div class="progress mb-5">            
+                <div class="progress-bar" role="progressbar" aria-label="example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="padside-20 bg-dark text-light">
+      <div class="row justify-content-center">
+        <div class="col-4 p-5">
+          <h3>John Doe</h3>
+          <address>
+            <a>40 rue Laure Diebold<br>69009 Lyon, France</a>
+            <a>10 20 30 40 50</a>
+            <a>john.doe@gmail.com</a><br>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="gray" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="gray" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="gray" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+            </p>
+          </address>
+        </div>
+        <div class="col-4 p-5">
+          <h3>Liens utiles</h3>
+          <a class="nav-link" href="./index.html">Accueil</a>
+          <a class="nav-link" href="../public/pages/services.html">Services</a>
+          <a class="nav-link" href="../public/pages/portfolio.html">Portefolio</a>
+          <a class="nav-link" href="../public/pages/contact.html">Me contacter</a>
+          <a class="nav-link" href="../public/pages/mentionslegales.html">Mentions légales</a>
+        </div>
+        <div class="col-4 p-5">
+          <h3>Mes dernières réalisations</h3>
+          <a class="nav-link" href="../public/pages/Portfolio.html">Fresh Food</a>
+          <a class="nav-link" href="../public/pages/Portfolio.html">Restaurant Atika</a>
+          <a class="nav-link" href="../public/pages/Portfolio.html">Espace bien-être</a>
+          <a class="nav-link" href="../public/pages/Portfolio.html">SEO</a>
+          <a class="nav-link" href="../public/pages/Portfolio.html">Création d'une API</a>
+          <a class="nav-link" href="../public/pages/Portfolio.html">Maquette d'un site</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

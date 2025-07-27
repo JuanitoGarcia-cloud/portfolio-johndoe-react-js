@@ -10,3 +10,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+    margin-bottom: 50px;
+}
+
+.navbar-nav a {
+    color: #fff;
+}
+a.nav-link:hover {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+
+section {
+    height: auto;   
+}
+
+.block {
+    align-content: center;
+}
+
+hr.h-2 {
+    color: blue;
+    border: solid 2px;
+    opacity: 1;    
+}
+
+hr.h-3 {
+    color: blue;
+    border: solid 3px;
+    opacity: 1;
+}
+
+.bg-img {
+    height: 500px;
+    background-image: url(../public/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.padside-10 {
+    padding: 0 10%;   
+}
+.padside-20 {
+    padding: 0 20%;   
+}
+
+u {
+    color: blue;
+}
+
+.card {
+    height: 500px;
+}
+.card:hover {
+    box-shadow:  0 .5rem 1rem #efefef;
+}
+
+/* .btn, .btn-primary {
+    align-content: end;
+} */
