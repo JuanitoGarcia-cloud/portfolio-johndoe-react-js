@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,64 +11,100 @@ code {
     monospace;
 }
 
-header {
-    margin-bottom: 50px;
+h1, strong {
+  font-weight: 600;
 }
 
-.navbar-nav a {
-    color: #fff;
+header {
+  margin-bottom: 50px;
 }
-a.nav-link:hover {
-    color: rgba(255, 255, 255, 0.76);
+
+header a.nav-link {
+  color: #fff;
+}
+
+header a.nav-link:hover {
+  text-decoration: underline;
+}
+header a.actif {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #fff;
+  opacity: 80%;
+}
+footer a.nav-link:hover {
+  font-weight: bold;
+}
+footer a svg:hover {
+  background-color: #fff;
 }
 
 
 section {
-    height: auto;   
+  height: auto;   
 }
 
 .block {
-    align-content: center;
+  align-content: center;
 }
 
 hr.h-2 {
-    color: blue;
-    border: solid 2px;
-    opacity: 1;    
+  color: blue;
+  border: solid 2px;
+  opacity: 1;    
 }
 
 hr.h-3 {
-    color: blue;
-    border: solid 3px;
-    opacity: 1;
+  color: blue;
+  border: solid 3px;
+  opacity: 1;
 }
 
 .bg-img {
-    height: 500px;
-    background-image: url(../public/img/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+  height: 500px;
+  background-image: url(../public/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .padside-10 {
-    padding: 0 10%;   
+  padding: 0 10%;   
 }
 .padside-20 {
-    padding: 0 20%;   
+  padding: 0 20%;   
 }
 
 u {
-    color: blue;
+  color: blue;
 }
 
 .card {
-    height: 500px;
+  height: 500px;
 }
 .card:hover {
-    box-shadow:  0 .5rem 1rem #efefef;
+  box-shadow:  0 1rem 1.5rem #efefef;
+  background-color: #efefef;
 }
 
-/* .btn, .btn-primary {
-    align-content: end;
-} */
+.card-body .btn-primary:hover {
+  opacity: 75%;
+}
+
+.accordion {
+  border: solid 1px #efefef;
+  border-radius: 8px;
+}
+
+svg.bi-geo-alt, svg.bi-phone {
+  color: darkgreen;
+}
+
+textarea {
+  height: 250px;
+}
+
+img.map {
+  height: 300px;
+  width: 300px;
+}
