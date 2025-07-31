@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', sans-serif;
   font-weight: 400;
@@ -15,30 +15,35 @@ h1, strong {
   font-weight: 600;
 }
 
-header {
-  margin-bottom: 50px;
+.lien-nav, .lien-foot {
+  color: #fff;
+  text-decoration: none;  
 }
 
-header a.nav-link {
+.lien-nav:hover {
   color: #fff;
+  text-decoration: underline;
+}
+.lien-nav:active, .lien-nav:visited {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-header a.nav-link:hover {
-  text-decoration: underline;
-}
-header a.actif {
-  text-decoration: underline;
-  font-weight: bold;
+.lien-foot:hover {
   color: #fff;
-  opacity: 80%;
-}
-footer a.nav-link:hover {
   font-weight: bold;
 }
-footer a svg:hover {
+
+.lien {
+  color: #fff;
+  text-decoration: none;  
+}
+
+a svg:hover {
   background-color: #fff;
-}
-
+  opacity: 80%;
+} 
 
 section {
   height: auto;   
@@ -60,18 +65,12 @@ hr.h-3 {
   opacity: 1;
 }
 
-.bg-img {
-  height: 500px;
-  background-image: url(../public/img/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
-
 .padside-10 {
+  margin: 0;
   padding: 0 10%;   
 }
 .padside-20 {
+  margin: 0;
   padding: 0 20%;   
 }
 
@@ -80,16 +79,26 @@ u {
 }
 
 .card {
-  height: 500px;
+  height: 520px;
 }
+
+.card-title {
+  font-weight: bold;
+}
+
 .card:hover {
-  box-shadow:  0 1rem 1.5rem #efefef;
+  box-shadow:  0 .75rem 1rem blue;
   background-color: #efefef;
 }
 
 .card-body .btn-primary:hover {
   opacity: 75%;
 }
+
+.card-body svg {
+  color: blue;
+}
+
 
 .accordion {
   border: solid 1px #efefef;
@@ -104,7 +113,26 @@ textarea {
   height: 250px;
 }
 
-img.map {
+.bg-img {
+  height: 500px;
+  background-image: url(../public/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.img {
+  height: 240px;
+  background-image: url(../public/img/john-doe-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.map {
   height: 300px;
-  width: 300px;
+  background-image: url(../public/img/carte-googlemap.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }

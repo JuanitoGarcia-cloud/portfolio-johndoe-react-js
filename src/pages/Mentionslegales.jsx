@@ -1,11 +1,10 @@
 const MentionsLegales = () => {
     return (
-        <div>
-            <section class="block p-4"></section>
+        <div className="mentionslegales">
             <section class="text-light p-4">
                 <h1 class="text-dark text-center mb-3">Mentions légales</h1>
-                <div class="row"><hr class="col-3" /><hr class="col-6 h-3 w-50" /><hr class="col-3" /></div>
-                {/* <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="row"><hr class="col-4" /><hr class="col-4 h-3" /><hr class="col-4" /></div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -66,7 +65,7 @@ const MentionsLegales = () => {
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </section>
         </div>
     )

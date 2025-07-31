@@ -3,15 +3,15 @@ import {Link} from "react-router-dom";
 
 const Portefolio = () => {
     return (
-        <div>
+        <div className="portefolio">
             <section class="bg-img block"></section>
             <section class="text-light p-4">
                 <h1 class="text-dark text-center mb-3">Portefolio</h1>
                 <p class="text-dark text-center mb-3">Voici quelques unes de mes réalisations</p>
-                <div class="row"><hr class="col-3" /><hr class="col-6 h-3 w-50" /><hr class="col-3" /></div>
-                <div class="container padside-10">
-                    <div class="row">
-                        <div class="col-4 p-3">
+                <div class="row"><hr class="col-4" /><hr class="col-4 h-3" /><hr class="col-4" /></div>
+                <div class="row padside-10">
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3">
                             <div  class="card  text-center">
                                  <img src="../img/portfolio/fresh-food.jpg" class="card-img-top" alt="produits frais en ligne"/>
                                 <div class="card-body text-dark">
@@ -24,7 +24,7 @@ const Portefolio = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 p-3">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3">
                             <div  class="card text-center">
                                 <img src="../img/portfolio/restaurant-japonais.jpg" class="card-img-top" alt="Restaurant japonais"/>
                                 <div class="card-body text-dark">
@@ -37,7 +37,7 @@ const Portefolio = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 p-3">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3">
                             <div  class="card text-center">
                                 <img src="../img/portfolio/espace-bien-etre.jpg" class="card-img-top" alt="Espace bien-être"/>
                                 <div class="card-body text-dark">
@@ -50,7 +50,7 @@ const Portefolio = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 p-3">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3">
                             <div  class="card text-center">
                                 <img src="../img/portfolio/seo.jpg" class="card-img-top" alt="Programmation"/>
                                 <div class="card-body text-dark">
@@ -63,7 +63,7 @@ const Portefolio = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 p-3">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3">
                             <div  class="card text-center">
                                 <img src="../img/portfolio/coder.jpg" class="card-img-top" alt="Coder"/>
                                 <div class="card-body text-dark">
@@ -76,7 +76,7 @@ const Portefolio = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 p-3">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3">
                             <div  class="card text-center">
                                 <img src="../img/portfolio/screens.jpg" class="card-img-top" alt="Ecran"/>
                                 <div class="card-body text-dark">
