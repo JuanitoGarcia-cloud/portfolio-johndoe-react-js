@@ -10,7 +10,7 @@ const Home = () => {
             <section class="text-dark p-5">
                 <div class="padside-20">
                     <div class="row shadow mb-5 bg-body rounded">
-                        <div class="col-6 p-4">
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-4">
                             <h2 class="text-dark"><strong>A propos</strong></h2>
                             <div class="row"><hr class="h-2"/></div>
                             <section class="img col-12"></section> 
@@ -18,7 +18,7 @@ const Home = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus reiciendis impedit aut iure enim placeat? Natus, neque at?</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus reiciendis impedit aut iure enim placeat? Natus, neque at?</p>
                         </div>
-                        <div class="col-6 p-4">
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-4">
                             <h2 class="text-dark"><strong>Mes compétences</strong></h2>
                             <div class="row"><hr class="h-2"/></div>
                             <h5>HTML5  90%</h5>
